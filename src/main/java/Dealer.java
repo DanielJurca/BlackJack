@@ -2,6 +2,8 @@ import cards.Card;
 
 /**
  * @author Daniel Jurca
+ *
+ * class extends player to dealer
  */
 public class Dealer extends Player {
     public Dealer() {

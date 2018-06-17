@@ -19,7 +19,7 @@ public class BlackJack {
 
     public BlackJack() {
         this.dealer = new Dealer();
-        this.players = new ArrayList<Player>();
+        this.players = new ArrayList<>();
 
     }
 
@@ -34,7 +34,7 @@ public class BlackJack {
         pressEnter();
         playerTurn();
         dealerTurn();
-        System.out.println("\n\t\t\t***ROUND ENDED***");
+        System.out.println("\n\t\t\t***ROUND ENDED***\n");
         pressEnter();
         System.out.println("===========================================================================");
         System.out.println("\n\t\t\t***RESULTS***");
@@ -43,6 +43,9 @@ public class BlackJack {
 
     }
 
+    /**
+     * Pressing enter to separate parts of the game
+     */
     public void pressEnter(){
         System.out.println("PRESS ENTER TO CONTINUE...");
         Scanner reader = new Scanner(System.in);
@@ -80,10 +83,10 @@ public class BlackJack {
                 if(round == 1){
                     System.out.println("\nSurrender (yes/no)?");
                     Scanner reader = new Scanner(System.in);
-                    String sur = reader.nextLine();
                     boolean inputOk = false;
                     boolean toSurrender = false;
                     while (!inputOk) {
+                        String sur = reader.nextLine();
                         try {
                             if (inputParser(sur)) {
                                 toSurrender = true;
@@ -237,16 +240,8 @@ public class BlackJack {
         return players;
     }
 
-    public void setPlayers(ArrayList<Player> players) {
-        this.players = players;
-    }
-
     public Deck getDeck() {
         return deck;
-    }
-
-    public void setDeck(Deck deck) {
-        this.deck = deck;
     }
 
     public Dealer getDealer() {

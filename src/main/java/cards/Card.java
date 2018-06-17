@@ -19,25 +19,14 @@ public class Card
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     public Suit getSuit() {
         return suit;
-    }
-
-    public void setSuit(Suit suit) {
-        this.suit = suit;
     }
 
     public Face getFace() {
         return face;
     }
 
-    public void setFace(Face face) {
-        this.face = face;
-    }
 
     @Override
     public String toString() {

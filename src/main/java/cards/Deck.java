@@ -11,8 +11,8 @@ public class Deck {
     private ArrayList<Card> restoreCards;
 
     public Deck() {
-        deck = new ArrayList<Card>();
-        restoreCards = new ArrayList<Card>();
+        deck = new ArrayList<>();
+        restoreCards = new ArrayList<>();
         for(Suit s : Suit.values()){
             for(Face f : Face.values()){
                 deck.add(new Card(s, f));
@@ -30,16 +30,8 @@ public class Deck {
         return tmp;
     }
 
-    public void setDeck(ArrayList<Card> deck) {
-        this.deck = deck;
-    }
-
     public ArrayList<Card> getRestoreCards() {
         return restoreCards;
-    }
-
-    public void setRestoreCards(ArrayList<Card> restoreCards) {
-        this.restoreCards = restoreCards;
     }
 
     public void shuffleDeck() {

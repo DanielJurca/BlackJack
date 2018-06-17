@@ -1,7 +1,3 @@
-import cards.Card;
-import cards.Face;
-import cards.Suit;
-
 /**
  * @author Daniel Jurca
  */
