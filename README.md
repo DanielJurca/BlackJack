@@ -1,7 +1,8 @@
 # BlackJack
-Card game (InQool)
+simple card game project (inQool)
 
-Multiplayer available
-Moves:
--Surender
--Hit and Stand - Simplified together (eg. "Do you want another card?" Yes -> HIT, No -> STAND
+## About
++ Multiplayer
+Available moves:  
+- Hit & Stand - simplified together
+- Surrender
